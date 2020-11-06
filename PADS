@@ -1,0 +1,8 @@
+SELECT NAME || '(' || SUBSTR(OCCUPATION,1,1) || ')'
+FROM OCCUPATIONS
+ORDER BY NAME;
+
+SELECT 'There are a total of ' || COUNT(NAME) || ' ' || LOWER(OCCUPATION) || 's.'
+FROM OCCUPATIONS 
+GROUP BY Occupation
+ORDER BY Count(Name), Occupation;
